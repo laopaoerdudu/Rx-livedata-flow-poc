@@ -1,14 +1,13 @@
 package com.wwe
 
 import io.reactivex.Single
-import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.rxkotlin.subscribeBy
 import io.reactivex.rxkotlin.zipWith
-import io.reactivex.schedulers.Schedulers
 import org.junit.Test
 
 class RxjavaTest {
 
+    /** 用于执行串行的网络请求 */
     @Test
     fun testFlatMap() {
         Single.just(1)
@@ -24,6 +23,7 @@ class RxjavaTest {
             )
     }
 
+    /** 用于执行并行的网络请求 */
     @Test
     fun testZip() {
         Single.just("hello")
@@ -37,12 +37,4 @@ class RxjavaTest {
                 }
             )
     }
-
-    @Test
-    fun testConcatWith() {
-        Single.just("1, 2, 3")
-            .concatWith(Single.just("100, 200"))
-    }
-
-
 }

@@ -101,7 +101,7 @@ class FlowTest {
                 }
             }
             .collect {
-                println(it)
+                println("collect: $it")
             }
     }
 
@@ -120,7 +120,7 @@ class FlowTest {
             }
         }
             .collect {
-                println(it)
+                println("collect: $it")
             }
     }
 

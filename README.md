@@ -133,7 +133,9 @@ buffe r函数最大的问题在于，不管怎样调整它缓冲区的大小（b
 
 collectLatest 函数，buffer 函数，conflate 函数，可以并称为背压三剑客。
 
+Ref:
 
+https://mp.weixin.qq.com/s/lXQ8NzZCng8vCumXAT1ayg
 
 
 
